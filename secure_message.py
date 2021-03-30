@@ -34,7 +34,7 @@ def decrypt_message(c_msg, kval):
             deci_msg += flip_uppercase[nposition]
         elif char in "@":
             deci_msg += " "
-        elif char in "%^":
+        elif char == "%":
             deci_msg += "!"
     return deci_msg
 
